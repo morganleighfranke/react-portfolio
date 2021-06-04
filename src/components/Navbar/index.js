@@ -15,6 +15,9 @@ function Navbar () {
                 <li className="nav-item active">
                      <a className="nav-link" href="/components/About">About<span className="sr-only">(current)</span></a>
                  </li>
+                 <li className="nav-item active">
+                     <a className="nav-link" href="/components/Portfolio">Portfolio<span className="sr-only">(current)</span></a>
+                 </li>
              </ul>
             </div>
         </div>
