@@ -1,19 +1,25 @@
 import React from "react";
-import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./pages/home";
+import Contact from "./pages/contact";
+import Portfolio from "./pages/portfolio";
 import About from './components/About';
-import Portfolio from "./components/Portfolio";
-import background from "./image/backround.jpeg";
-import Footer from './components/Footer';
-// import Contact from './components/Contact';
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div style={{ backgroundImage: `url(${background})`}}>
-    <Navbar />
-    <About />
-    <Portfolio />
-    <Footer />
+    <Router>
+      <div>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
     </div>
+    </Router>
   );
 }
 
