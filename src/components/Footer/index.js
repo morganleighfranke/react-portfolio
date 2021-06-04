@@ -5,7 +5,7 @@ function Footer () {
     return (
         <footer className="footer py-3">
             <div className="container text-center">
-                <span className="text-muted">&copy; Morgan Franke, 2021, All Rights Reserved.</span>
+                <span className="text">&copy; Morgan Franke, 2021, All Rights Reserved.</span>
             </div>
         </footer>
     )

@@ -4,7 +4,6 @@ import About from './components/About';
 import Portfolio from "./components/Portfolio";
 import background from "./image/backround.jpeg";
 import Footer from './components/Footer';
-// import Portfolio from './components/Portfolio';
 // import Contact from './components/Contact';
 
 function App() {
