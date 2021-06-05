@@ -62,11 +62,13 @@ function ProjectCard(props) {
   ];
 
   return (
+    <div className="container">
+      <br/>
     <div>
       {projectData.map((project, index) => {
         return (
           <div key={index}>
-            <div className="card col-sm-3 ">
+            <div className="card col-md-6 ">
               <img
                 src={project.image}
                 className="card-img-top"
@@ -83,11 +85,15 @@ function ProjectCard(props) {
                 <a href={project.deployedlink} target="_blank" rel="noreferrer">
                   Deployed Application
                 </a>
+               
               </div>
+            
             </div>
+            <br/>
           </div>
         );
       })}
+    </div>
     </div>
   );
 }

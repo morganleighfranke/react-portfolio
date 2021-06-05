@@ -6,7 +6,7 @@ import Resume from "./Resume/MorganFrankeTechnicalResume.pdf";
 function Bio() {
   return (
     <div className="container">
-      <br></br>
+      <br/>
 
       <div className="card">
         <div className="card-header">A little bit about me...</div>
