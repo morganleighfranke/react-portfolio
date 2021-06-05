@@ -5,6 +5,7 @@ import Contact from "./pages/contact";
 import Portfolio from "./pages/portfolio";
 import Header from "./components/Header";
 import About from "./pages/about";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/pages/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
           </Switch>
+          <Footer />
     </div>
     </Router>
   );
