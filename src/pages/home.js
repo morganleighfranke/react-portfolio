@@ -1,10 +1,10 @@
 import React from "react";
-
+import Bio from "../components/Bio";
 
 function Home() {
     return(
         <div>
-            <h1>Home Page</h1>
+        <Bio />
            
         </div>
     )

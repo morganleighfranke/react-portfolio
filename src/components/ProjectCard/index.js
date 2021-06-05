@@ -1,7 +1,5 @@
 import React from "react";
 import "./style.css";
-import PWA from "./images/PWA.png";
-import EmployeeDirectory from "./images/employeedirectory.png";
 
 function ProjectCard(props) {
   const projectData = [
@@ -64,9 +62,9 @@ function ProjectCard(props) {
         <div className="card-body">
           <h5 className="card-title">{project.title}</h5>
           <p>{project.description}</p>
-          <a href={project.githublink} target="_blank">Github Repository</a>
+          <a href={project.githublink} target="_blank" rel="noreferrer">Github Repository</a>
           <br/>
-          <a href={project.deployedlink} target="_blank">Deployed Application</a>
+          <a href={project.deployedlink} target="_blank" rel="noreferrer">Deployed Application</a>
         </div>
       </div>
     </div>
