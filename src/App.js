@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
 import Portfolio from "./pages/portfolio";
-import About from './components/About';
 import Header from "./components/Header";
+import About from "./pages/about";
 
 function App() {
   return (
@@ -13,7 +13,6 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/home" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />

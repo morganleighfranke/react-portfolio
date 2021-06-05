@@ -3,7 +3,7 @@ import "./style.css";
 import Resume from "./Resume/MorganFrankeTechnicalResume.pdf";
 
 
-function About() {
+function Bio() {
   return (
     <div className="container">
       <br></br>
@@ -38,4 +38,4 @@ function About() {
   );
 }
 
-export default About;
+export default Bio;
