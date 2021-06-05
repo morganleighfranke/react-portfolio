@@ -1,4 +1,5 @@
 import React from "react";
+import Resume from "./Resume/MorganFrankeTechnicalResume.pdf";
 
 function ContactCard() {
     return(
@@ -10,9 +11,11 @@ function ContactCard() {
             
             <a href="https://github.com/morganleighfranke" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a>
             <span> </span>
-            <a href="./assets/images/Morgan Franke Technical Resume.pdf" download="Morgan_Franke_Resume">
+            <a href={Resume} download="Morgan_Franke_Resume">
                 <button type="submit" className="btn btn-primary">Download My Resume</button>
             </a>
+            <span> </span>
+            <a href = "mailto: morganleighfranke@gmail.com" className="btn btn-primary" target="_blank" rel="noreferrer">Email Me</a>
         </div>
         </div>
   
