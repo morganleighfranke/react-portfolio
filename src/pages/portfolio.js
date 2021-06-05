@@ -1,10 +1,10 @@
 import React from "react";
-import Project from "../components/Project";
+import ProjectCard from "../components/ProjectCard";
 
 function Portfolio() {
     return(
        <div>
-          <Project />
+          <ProjectCard />
        </div>
     
     )
