@@ -6,16 +6,16 @@ function ContactCard() {
         <div className="card">
         <h5 className="card-header text-center">Get in touch with me</h5>
         <div className="card-body text-center">
-            <a href="http://www.linkedin.com/in/morganfranke" className="btn btn-primary" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="http://www.linkedin.com/in/morganfranke" className="btn btn-dark" target="_blank" rel="noreferrer">LinkedIn</a>
             <span> </span>
             
-            <a href="https://github.com/morganleighfranke" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://github.com/morganleighfranke" className="btn btn-dark" target="_blank" rel="noreferrer">GitHub</a>
             <span> </span>
             <a href={Resume} download="Morgan_Franke_Resume">
-                <button type="submit" className="btn btn-primary">Download My Resume</button>
+                <button type="submit" className="btn btn-dark">Download My Resume</button>
             </a>
             <span> </span>
-            <a href = "mailto: morganleighfranke@gmail.com" className="btn btn-primary" target="_blank" rel="noreferrer">Email Me</a>
+            <a href = "mailto: morganleighfranke@gmail.com" className="btn btn-dark" target="_blank" rel="noreferrer">Email Me</a>
         </div>
         </div>
   
