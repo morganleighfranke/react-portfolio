@@ -51,27 +51,6 @@ function ProjectCard(props) {
   githublink: "https://github.com/morganleighfranke/Day_Planner",
   deployedlink: "https://morganleighfranke.github.io/Day_Planner/",
 },
-{
-  title: "",
-  description: "",
-  image: "",
-  githublink: "",
-  deployedlink: "",
-},
-{
-  title: "",
-  description: "",
-  image: "",
-  githublink: "",
-  deployedlink: "",
-},
-{
-  title: "",
-  description: "",
-  image: "",
-  githublink: "",
-  deployedlink: "",
-},
 
   ];
 
