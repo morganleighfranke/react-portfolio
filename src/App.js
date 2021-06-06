@@ -1,23 +1,23 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
 import Portfolio from "./pages/portfolio";
 import Header from "./components/Header";
 import About from "./pages/about";
 import Footer from "./components/Footer";
+import { HashRouter as Router, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div>
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/react-portfolio" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/contact" component={Contact} />
+          <Route path="/react-portfolio" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/contact" component={Contact} />
           </Switch>
           <Footer />
     </div>
