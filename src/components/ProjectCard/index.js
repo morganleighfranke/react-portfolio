@@ -64,11 +64,11 @@ function ProjectCard(props) {
   return (
     <div className="container">
       <br/>
-    <div>
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 grid-cols-1">
       {projectData.map((project, index) => {
         return (
           <div key={index}>
-            <div className="card col-md-6 ">
+            <div className="card col-md-12">
               <img
                 src={project.image}
                 className="card-img-top"
