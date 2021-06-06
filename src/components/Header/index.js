@@ -1,32 +1,63 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./style.css";
 
-function Header () {
-    return (
-        <header>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <div className="container">
-                <a className="navbar-brand" href="/">Morgan Franke</a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                         <span className="navbar-toggler-icon"></span>
-                    </button>
-             <div className="collapse navbar-collapse" id="navbarSupportedContent">
+function Header() {
+  return (
+    <header>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container">
+          <a className="navbar-brand" href="/">
+            Morgan Franke
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
-                <li className="nav-item active">
-                     <a className="nav-link" href="/about">About<span className="sr-only">(current)</span></a>
-                 </li>
-                 <li className="nav-item active">
-                     <a className="nav-link" href="/portfolio">Portfolio<span className="sr-only">(current)</span></a>
-                 </li>
-                 <li className="nav-item active">
-                     <a className="nav-link" href="/contact">Contact<span className="sr-only">(current)</span></a>
-                 </li>
-             </ul>
-            </div>
+              <li className="nav-item active">
+                <Link
+                  to="/about"
+                  className={
+                    window.location.pathname === "/about"
+                      ? "nav-link active"
+                      : "nav-link"
+                  }
+                >
+                  About
+                </Link>
+              </li>
+              <li className="nav-item active">
+              <Link
+                  to="/portfolio"
+                  className={
+                    window.location.pathname === "/portfolio"
+                      ? "nav-link active"
+                      : "nav-link"
+                  }
+                >
+                  Portfolio
+                </Link>
+              </li>
+              <li className="nav-item active">
+                <a className="nav-link" href="/contact">
+                  Contact<span className="sr-only">(current)</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-</header>
-    )
+      </nav>
+    </header>
+  );
 }
 
 export default Header;
