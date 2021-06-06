@@ -1,0 +1,7 @@
+.practice { 
+    background: url("https://firebasestorage.googleapis.com/v0/b/portfolio-916a8.appspot.com/o/background.jpeg?alt=media&token=e7ff11f6-1bc2-4032-90f5-bcd72712ec90") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }

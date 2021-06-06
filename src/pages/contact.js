@@ -3,8 +3,9 @@ import ContactCard from "../components/ContactCard";
 
 function Contact () {
     return(
+        <div className="practice h-screen">
     <ContactCard />
-           
+           </div>
     );
 };
 

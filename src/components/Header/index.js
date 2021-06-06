@@ -7,10 +7,18 @@ function Header() {
     <header>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
-          <a className="navbar-brand" href="/">
-            Morgan Franke
-          </a>
-          <button
+          <div className="navbar-brand">  <Link
+                  to="/"
+                  className={
+                    window.location.pathname === "/"
+                      ? "nav-link active"
+                      : "nav-link"
+                  }
+                >
+                  Morgan Franke
+                </Link>
+                </div>
+                <div
             className="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -19,22 +27,11 @@ function Header() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+            <span className="navbar-toggler-icon active"></span>
+          </div>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                <Link
-                  to="/about"
-                  className={
-                    window.location.pathname === "/about"
-                      ? "nav-link active"
-                      : "nav-link"
-                  }
-                >
-                  About
-                </Link>
-              </li>
+
               <li className="nav-item active">
               <Link
                   to="/portfolio"
@@ -48,9 +45,16 @@ function Header() {
                 </Link>
               </li>
               <li className="nav-item active">
-                <a className="nav-link" href="/contact">
-                  Contact<span className="sr-only">(current)</span>
-                </a>
+              <Link
+                  to="/contact"
+                  className={
+                    window.location.pathname === "/contact"
+                      ? "nav-link active"
+                      : "nav-link"
+                  }
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>

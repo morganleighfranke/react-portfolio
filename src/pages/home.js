@@ -1,9 +1,10 @@
 import React from "react";
 import Bio from "../components/Bio";
+import "../../src/practice.css";
 
 function Home() {
     return(
-        <div>
+        <div className="practice h-screen">
         <Bio />
            
         </div>
