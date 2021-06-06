@@ -10,7 +10,7 @@ function Header() {
           <div className="navbar-brand">  <Link
                   to="/"
                   className={
-                    window.location.pathname === "/"
+                    window.location.pathname === "/react-portfolio"
                       ? "nav-link active"
                       : "nav-link"
                   }
